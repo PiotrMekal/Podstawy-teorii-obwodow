@@ -16,10 +16,5 @@ namespace Podstawy_teorii_obwodow
         {
             InitializeComponent();
         }
-
-        private void Poziom2_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -12,8 +12,6 @@ namespace Podstawy_teorii_obwodow
 {
     public partial class Poziom1 : Form
     {
-        Poziom level = new Poziom();
-        int numer = 0;
         public Poziom1()
         {
             InitializeComponent();
@@ -26,7 +24,7 @@ namespace Podstawy_teorii_obwodow
             dropR.DragEnter += dropR_DragEnter;
             dropR.DragDrop += dropR_DragDrop;
             INIT();
-
+            
         }
 
 
@@ -81,7 +79,7 @@ namespace Podstawy_teorii_obwodow
         private void button1_Click(object sender, EventArgs e)
         {
             
-            Poziom2 poziom = new Poziom2();
+            Poziom1 poziom = new Poziom1();
             poziom.Show();
             Visible = false;
             
@@ -113,8 +111,7 @@ namespace Podstawy_teorii_obwodow
         }
 
         private void r1_MouseDown(object sender, MouseEventArgs e)
-        {
-            numer = 0;
+        {           
             var img = r1.Image;
             if (img == null) return;
             if (DoDragDrop(img, DragDropEffects.Move) == DragDropEffects.Move)
@@ -124,8 +121,7 @@ namespace Podstawy_teorii_obwodow
         }
 
         private void r2_MouseDown(object sender, MouseEventArgs e)
-        {
-            numer = 1;
+        {            
             var img = r2.Image;
             if (img == null) return;
             if (DoDragDrop(img, DragDropEffects.Move) == DragDropEffects.Move)
@@ -135,8 +131,7 @@ namespace Podstawy_teorii_obwodow
         }
 
         private void r3_MouseDown(object sender, MouseEventArgs e)
-        {
-            numer = 2;
+        {           
             var img = r3.Image;
             if (img == null) return;
             if (DoDragDrop(img, DragDropEffects.Move) == DragDropEffects.Move)
@@ -146,8 +141,7 @@ namespace Podstawy_teorii_obwodow
         }
 
         private void r4_MouseDown(object sender, MouseEventArgs e)
-        {
-            numer = 3;
+        {            
             var img = r4.Image;
             if (img == null) return;
             if (DoDragDrop(img, DragDropEffects.Move) == DragDropEffects.Move)
@@ -157,8 +151,7 @@ namespace Podstawy_teorii_obwodow
         }
 
         private void r5_MouseDown(object sender, MouseEventArgs e)
-        {
-            numer = 4;
+        {           
             var img = r5.Image;
             if (img == null) return;
             if (DoDragDrop(img, DragDropEffects.Move) == DragDropEffects.Move)
@@ -194,28 +187,21 @@ namespace Podstawy_teorii_obwodow
 
         private void sprawdz_Click(object sender, EventArgs e)
         {
-            
-            if (numer == 2)
+            if (r3.Location.X != 320 && r3.Location.Y != 615)
             {
-                Controls.Add(level);
                 button1.Visible = true;
-            }
-            else
-            {
-
             }
 
         }
 
         private void r1_Click(object sender, EventArgs e)
         {
-            
+            button1.Visible = true;
         }
 
         private void r3_Click(object sender, EventArgs e)
         {
 
         }
-
     }
 }

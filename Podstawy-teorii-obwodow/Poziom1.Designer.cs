@@ -150,7 +150,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(196, 39);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Podpowiedz:\r\nR=R1+R2+R3+Rw\r\nRw- opornik wybrany przez użytkownika";
+            this.label2.Text = "Podpowiedz:\r\nR=R1+R2+Rw\r\nRw- opornik wybrany przez użytkownika";
             this.label2.Visible = false;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
