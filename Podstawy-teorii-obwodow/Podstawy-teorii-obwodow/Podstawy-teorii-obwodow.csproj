@@ -58,6 +58,12 @@
     <Compile Include="Poziom1.Designer.cs">
       <DependentUpon>Poziom1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Poziom2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Poziom2.Designer.cs">
+      <DependentUpon>Poziom2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
