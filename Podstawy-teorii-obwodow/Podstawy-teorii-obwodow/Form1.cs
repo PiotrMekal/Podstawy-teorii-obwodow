@@ -42,8 +42,11 @@ namespace Podstawy_teorii_obwodow
         
         }
 
-        
-
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Instrukcja poziom = new Instrukcja();
+            poziom.Show();
+            Visible = false;
+        }
     }
 }

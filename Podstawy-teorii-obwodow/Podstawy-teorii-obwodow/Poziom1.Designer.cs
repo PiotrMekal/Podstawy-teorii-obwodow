@@ -43,8 +43,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblwynik = new System.Windows.Forms.Label();
             this.sprawdz = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.movObj = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.r4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.r3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.r2)).BeginInit();
@@ -57,11 +64,14 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(317, 103);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.Green;
+            this.label1.Location = new System.Drawing.Point(176, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 13);
+            this.label1.Size = new System.Drawing.Size(536, 40);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Zad 1. Laczenie szeregowe rezystorow:";
+            this.label1.Text = "Zad 1. Laczenie szeregowe rezystorow:\r\nWstaw odpowiedni rezystor tak aby Rezystan" +
+    "cja układu wynosiła 100 Ohm.";
             // 
             // r4
             // 
@@ -176,9 +186,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(764, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.Size = new System.Drawing.Size(59, 20);
             this.label3.TabIndex = 11;
             this.label3.Text = "Wynik: ";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -186,11 +197,13 @@
             // lblwynik
             // 
             this.lblwynik.AutoSize = true;
-            this.lblwynik.Location = new System.Drawing.Point(804, 27);
+            this.lblwynik.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblwynik.Location = new System.Drawing.Point(819, 27);
             this.lblwynik.Name = "lblwynik";
-            this.lblwynik.Size = new System.Drawing.Size(31, 13);
+            this.lblwynik.Size = new System.Drawing.Size(45, 20);
             this.lblwynik.TabIndex = 12;
             this.lblwynik.Text = "5000";
+            this.lblwynik.Click += new System.EventHandler(this.lblwynik_Click);
             // 
             // sprawdz
             // 
@@ -202,29 +215,113 @@
             this.sprawdz.UseVisualStyleBackColor = true;
             this.sprawdz.Click += new System.EventHandler(this.sprawdz_Click);
             // 
-            // panel1
+            // label5
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel1.Location = new System.Drawing.Point(528, 448);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(100, 100);
-            this.panel1.TabIndex = 14;
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Green;
+            this.label5.Location = new System.Drawing.Point(504, 318);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 13);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "R2= 30 Ohm";
             // 
-            // movObj
+            // label6
             // 
-            this.movObj.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.movObj.Location = new System.Drawing.Point(693, 448);
-            this.movObj.Name = "movObj";
-            this.movObj.Size = new System.Drawing.Size(100, 100);
-            this.movObj.TabIndex = 15;
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Green;
+            this.label6.Location = new System.Drawing.Point(504, 400);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "R3= 22 Ohm";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Green;
+            this.label7.Location = new System.Drawing.Point(52, 596);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "17 Ohm";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Green;
+            this.label8.Location = new System.Drawing.Point(207, 595);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 13);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "20 Ohm";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.Green;
+            this.label9.Location = new System.Drawing.Point(360, 594);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(44, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "23 Ohm";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.Green;
+            this.label10.Location = new System.Drawing.Point(507, 593);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(44, 13);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "26 Ohm";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.Color.Green;
+            this.label11.Location = new System.Drawing.Point(668, 596);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(44, 13);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "27 Ohm";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Green;
+            this.label4.Location = new System.Drawing.Point(504, 251);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 13);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "R1= 25 Ohm";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.Green;
+            this.label12.Location = new System.Drawing.Point(527, 474);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(44, 13);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "23 Ohm";
+            this.label12.Visible = false;
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // Poziom1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.movObj);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.sprawdz);
             this.Controls.Add(this.lblwynik);
             this.Controls.Add(this.label3);
@@ -270,7 +367,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblwynik;
         private System.Windows.Forms.Button sprawdz;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel movObj;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label12;
     }
 }

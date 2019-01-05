@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Instrukcja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instrukcja.Designer.cs">
+      <DependentUpon>Instrukcja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Poziom.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrukcja.resx">
+      <DependentUpon>Instrukcja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Poziom1.resx">
       <DependentUpon>Poziom1.cs</DependentUpon>

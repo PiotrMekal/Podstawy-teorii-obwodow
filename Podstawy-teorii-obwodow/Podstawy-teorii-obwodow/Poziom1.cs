@@ -25,14 +25,14 @@ namespace Podstawy_teorii_obwodow
             dropR.AllowDrop = true;
             dropR.DragEnter += dropR_DragEnter;
             dropR.DragDrop += dropR_DragDrop;
-            INIT();
+          //  INIT();
 
         }
 
 
 
         private Point firstPoint = new Point();
-
+        /*
         public void INIT()
         {
             movObj.MouseDown += (ss, ee) =>
@@ -53,6 +53,7 @@ namespace Podstawy_teorii_obwodow
             };
 
         }
+        */
 
         public static class Wynik
         {
@@ -71,6 +72,9 @@ namespace Podstawy_teorii_obwodow
         private void button2_Click(object sender, EventArgs e)
         {
             label2.Visible = true;
+            Wynik.wynik = Wynik.wynik - 450;
+            lblwynik.Text = Wynik.wynik.ToString();
+            MessageBox.Show("Za skorzystanie z podpowiedzi tracisz 450pkt");
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -197,11 +201,30 @@ namespace Podstawy_teorii_obwodow
             
             if (numer == 2)
             {
-                Controls.Add(level);
+               // Controls.Add(level);
                 button1.Visible = true;
+                r1.Image = null;
+                r2.Image = null;
+                r4.Image = null;
+                r5.Image = null;
+
+                label9.Visible = false;
+                label12.Visible = true;
+                MessageBox.Show("Dobrze! przechodzisz do nastepnego poziomu!");
+
             }
             else
             {
+               // level.Text = "Zle jeszcze raz!";
+               // Controls.Add(level);
+                button1.Visible = false;
+                //r1.Location = new Point(12,615);
+                dropR.Image = null;
+                //r1.Image = 
+              
+                Wynik.wynik = Wynik.wynik - 150;
+                lblwynik.Text = Wynik.wynik.ToString();
+                MessageBox.Show("Zle! tracisz 150pkt. Sprobuj jeszcze raz!");
 
             }
 
@@ -217,5 +240,19 @@ namespace Podstawy_teorii_obwodow
 
         }
 
+        private void lblwynik_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }
