@@ -58,6 +58,12 @@
     <Compile Include="Instrukcja.Designer.cs">
       <DependentUpon>Instrukcja.cs</DependentUpon>
     </Compile>
+    <Compile Include="Podsumowanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Podsumowanie.Designer.cs">
+      <DependentUpon>Podsumowanie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Poziom.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -67,12 +73,6 @@
     <Compile Include="Poziom1.Designer.cs">
       <DependentUpon>Poziom1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Poziom2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Poziom2.Designer.cs">
-      <DependentUpon>Poziom2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -81,11 +81,11 @@
     <EmbeddedResource Include="Instrukcja.resx">
       <DependentUpon>Instrukcja.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Podsumowanie.resx">
+      <DependentUpon>Podsumowanie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Poziom1.resx">
       <DependentUpon>Poziom1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Poziom2.resx">
-      <DependentUpon>Poziom2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -108,6 +108,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="kondensator1.png" />
+    <Content Include="poziom2.png" />
+    <Content Include="poziom3.png" />
+    <Content Include="poziom4.png" />
+    <Content Include="poziom5.png" />
+    <Content Include="poziom6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

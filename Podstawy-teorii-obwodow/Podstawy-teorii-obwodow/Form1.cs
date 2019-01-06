@@ -37,9 +37,7 @@ namespace Podstawy_teorii_obwodow
            
             Poziom1 poziom = new Poziom1();
             poziom.Show();
-            Visible = false;
-           
-        
+            Visible = false;                
         }
 
         private void button2_Click(object sender, EventArgs e)
